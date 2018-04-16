@@ -16,4 +16,29 @@ form.addEventListener('submit', (e) => {
      .then(data => console.log(data))
      .catch(err => console.log(err));
       e.preventDefault()
-    });S
+    });
+
+    let datapoints = [
+        {label:'Windows', y: 0},
+        {label:'MacOs', y: 0},
+        {label:'Linux', y: 0},
+        {label:'Other', y: 0},
+    ];
+
+    const chartContainer = document.querySelector('#chartContainer');
+
+    if(chartContainer){
+        const chart = new CanvasJS.Chart('chartContainer', {
+            animationEnabled: true,
+            theme: 'theme1',
+            title: {
+                text:'OS results'
+            },
+            data:[ {
+                type:'column',
+                datapoints:datapoints
+            }
+        ]
+        })
+    chart.render();
+    }

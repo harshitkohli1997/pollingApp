@@ -17,7 +17,7 @@ router.get('/', (req,res) => {
 router.post('/', (req,res) => {
     pusher.trigger('os-pole', 'os-vote', {
         points:1 ,
-        os:req.bosy.os
+        os:req.body.os
       }) 
       res.json({success :true, message :'thanks for voting'})
 });
