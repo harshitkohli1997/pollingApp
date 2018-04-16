@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   
 </head>
@@ -32,9 +33,12 @@
                 <p>
                         <input type="radio" name ="os" id = "other" value="Other">
                         <label for="other">Something else</label>
-                    </p>
-                    <input type="submit" value="vote " class="btn">
+                   </p> 
+                    <input type="submit" value="vote " class="btn btn-danger">
     </form>
+
+    <br><br>
+    <div id="chatContainer" style="height:300px; width :100%;"></div>
     </div>
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -42,5 +46,8 @@
   crossorigin="anonymous"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
