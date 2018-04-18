@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
         {label:'Windows', y: 0},
         {label:'MacOs', y: 0},
         {label:'Linux', y: 0},
-        {label:'Other', y: 0},
+        {label:'Others', y: 0},
     ];
 
     const chartContainer = document.querySelector('#chartContainer');
