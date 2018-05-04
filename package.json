@@ -1,18 +1,22 @@
 {
-  "name": "pollingapp",
-  "version": "1.0.0",
-  "description": "real time polling app build using node.js and pusher",
-  "main": "index.js",
+  "name": "pusherpoll",
+  "version": "1.0.1",
+  "description": "Real time polling app",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "author": "HK",
-  "license": "ISC",
+  "author": "Brad Traversy",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "mongoose": "^5.0.14",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.2",
     "pusher": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
   }
 }
